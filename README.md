@@ -108,7 +108,6 @@ A zero vector has no direction, so the function returns `0` instead of dividing 
 │   ├── embeddingService.test.js          API failures, bad responses, caching (fake fetch)
 │   ├── semanticSearchService.test.js     ranking, K, empty inputs (fake embedder)
 │   └── relevance.integration.test.js     real model: does each query hit the right category?
-├── archive/triage-api/                   earlier LLM triage experiment (not used)
 ├── .env.example
 ├── jsconfig.json
 └── package.json
