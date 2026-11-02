@@ -1,19 +1,24 @@
 {
-  "name": "llm-learning",
+  "name": "similar-ticket-search",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Find historical support tickets that are semantically similar to a new ticket, using embeddings and cosine similarity.",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "serve": "node --env-file-if-exists=.env src/server.js",
+    "test": "node --test"
   },
-  "keywords": [],
-  "author": "",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "keywords": [
+    "embeddings",
+    "semantic-search",
+    "cosine-similarity"
+  ],
+  "author": "Goutham Bittla",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@google/genai": "^2.30.0",
-    "dotenv": "^18.0.8",
-    "zod": "^4.6.7"
+  "devDependencies": {
+    "@types/node": "^22.20.5"
   }
 }
